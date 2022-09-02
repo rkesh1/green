@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url(./font/static/Quicksand-Bold.ttf);
+  }
+  @font-face {
+    font-family: Quicksand-Light;
+    src: url(./font/static/Quicksand-Light.ttf);
+  }
+  @font-face {
+    font-family: Quicksand-Medium;
+    src: url(./font/static/Quicksand-Medium.ttf);
+  }
+  @font-face {
+    font-family: Quicksand-Regular;
+    src: url(./font/static/Quicksand-Regular.ttf);
+  }
+  @font-face {
+    font-family: Quicksand-Medium;
+    src: url(./font/static/Quicksand-SemiBold.ttf);
+  }
+
+body {
+    background-color: #fff;
+    width:400px;
+    font-family: Quicksand-Bold;
+}
+.parentContainer{
+    background-color: #edeff7;
+}
+.container {
+    max-width: 400px;
+}
+.w-full{
+    width: 100%;
+}
+
+.imageContainer{
+   padding: 0  15px;;
+    
+}
+.image{
+    background-image: url("./img/bts-green.gif");
+    height: 335px;
+    width: 365px;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+}
+.imageClass{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    height: 100px;
+    margin-top: 20px;
+}
+h1.name {
+    font-size: 20px;
+    color: #fff;
+    padding: 0 18px;
+    font-weight: 100;
+}
+.eidContainer{
+    margin-top: 10px;    
+    margin-bottom: 15px;
+}
+.eid{
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.dob{margin: 0 0 40px;}
+.date{
+    font-size: 13px;
+    color:#fce48e;
+    font-weight: bold;
+}
+.result {
+    text-align: center;
+    font-size: 26px;
+    color: #000;
+    margin: 25px 0 20px;
+}
+.date2{
+    text-align: center;
+    font-size : 20px;
+    color: #707d97;
+}
+.qrcode[data-v-0660af3e] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    text-align: center;
+}
+.logo{
+    width: 40px;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+.info{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 40px;
+}

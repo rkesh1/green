@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>ALHOSN Web App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="parentContainer">
+    <div class="container">
+        <img class="w-full" src="./img/header.png" alt="header" />
+        <div class="imageContainer">
+            <div class="image">
+                <img class="logo" src="./img/logo.png"/>
+                <img class="info" src="./img/info-1.png"/>
+                <!--<div data-v-49204dff="" class="hero-card--support"><svg data-v-6f8b76c1="" data-v-49204dff="" aria-hidden="true" class="support svg-icon"><use data-v-6f8b76c1="" xlink:href="#icon-support-grey"></use></svg></div> -->
+                <img class="imageClass"src="./img/sneha.png" />
+                <h1 class="name">SNEHA KESHARWANI DEEPAK KUMAR KESHRI</h1>
+                <div class="eidContainer">
+                    <span class="eid"> EID: 784-1993-*******-8 • PPN: V361**** </span>
+                </div>
+                <div class="dob"> <span class="eid">DOB: ******* </span></div>
+                <div class="dateContainer"> <span class="date"> Covid-19 Vaccinated - 19 Oct 2021  </span></div>
+            </div>
+        </div>
+        <div data-v-0660af3e="" class="result"> 3 days - PCR Negative </div>
+        <div data-v-0660af3e="" class="date2"> Since <span id="dateshow"></span></div>
+        <div class="center">
+       <img src="img/barcode.gif" />
+       <img class="w-full" src="img/footer.png" />
+    </div>
+    </div>
+</div>
+<script>
+var date = new Date();
+date.setDate(date.getDate() - 3);
+const day = date.getDate();
+const month = date.getMonth() + 1; // getMonth() returns month from 0 to 11
+const year = date.getFullYear();
+var ms = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+const dateFor = `${day} ${ms[month]} ${year}`; 
+document.getElementById('dateshow').innerHTML = dateFor
+console.log('date', date, day, ms[month], year);
+</script>
+</body>
+</html>
