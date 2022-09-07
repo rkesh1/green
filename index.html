@@ -40,7 +40,7 @@ date.setDate(date.getDate() - 3);
 const day = date.getDate();
 const month = date.getMonth() + 1; // getMonth() returns month from 0 to 11
 const year = date.getFullYear();
-var ms = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+var ms = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 const dateFor = `${day} ${ms[month]} ${year}`; 
 document.getElementById('dateshow').innerHTML = dateFor
 console.log('date', date, day, ms[month], year);
